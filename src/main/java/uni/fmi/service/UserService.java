@@ -9,7 +9,7 @@ public class UserService {
 
 	private static List<User> users = new ArrayList<User>();
 
-	private static List<User> getUsers() {
+	public static List<User> getUsers() {
 		if (users.isEmpty()) {
 			users.add(new User("ValidUserName", "ValidPass", "test@test.com"));
 		}
